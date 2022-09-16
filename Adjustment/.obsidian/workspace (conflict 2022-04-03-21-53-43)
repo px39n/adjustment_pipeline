@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "37cb32b598260a42",
+    "type": "split",
+    "children": [
+      {
+        "id": "563ef41b0c3a7289",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Modelling/Algorithm/MST.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d7bea60677da4aad",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "b7eef5a9504f3682",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "1476488900230e97",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "a04903b8f98c64be",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f5d0e1bc7108c207",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Modelling/Algorithm/MST.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "08f54f0480fb0d58",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Modelling/Algorithm/MST.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "563ef41b0c3a7289",
+  "lastOpenFiles": [
+    "Modelling/Algorithm/MST.md",
+    "Modelling/Algorithm/Disjoint-set ADT.md",
+    "AAA/Overview of Graph.md",
+    "AAA/Overview of Modelling.md",
+    "AAA/考前冲冲冲.md",
+    "AAA/Overview of Tree.md",
+    "Algorithm/Spatial overlap/Poly Intersection.md",
+    "Modelling/Algorithm/Sort/Overview of Sort.md",
+    "AAA/Overview of Concept.md",
+    "AAA/SuperFast.md"
+  ]
+}

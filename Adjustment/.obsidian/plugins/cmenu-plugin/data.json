@@ -1,0 +1,9 @@
+{
+  "aestheticStyle": "default",
+  "menuCommands": [],
+  "appendMethod": "workspace",
+  "shouldShowMenuOnSelect": false,
+  "cMenuVisibility": true,
+  "cMenuBottomValue": 4.25,
+  "cMenuNumRows": 2
+}
