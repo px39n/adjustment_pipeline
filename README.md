@@ -1,4 +1,17 @@
  
+# Kindly Notice to friends
+
+This is a private GIthub owned by zhehao Liang(Tom). 
+
+I work on this only out of my interest and further scientific use. 
+
+It will take rise for taking exams by using it. I am not reponsible for that.
+
+So it is not allowed to share with anyone. ( I will share it until its perfect)
+
+
+
+
 # What these code can do?
 
 3 mins for solving any problem in Adjustment. Especially the problem in adjustment (TUB) courses.
@@ -9,9 +22,9 @@ not only (Linear, non-linear, Total LST, constraint, condition, combined, dash,u
 # Fast startup:
 There are three steps to handle it
 
-1. I have finished 13 examples question and put it into Template_xxx mlx, which corresponding the exercises in courses.
-Copy the code following the instruction. And you will have a insight about how this work.
 
+
+1. There are 13 examples in Template_xxx mlx, which are corresponding to the exercises in courses. Just copy the code following the instruction. And you will have a insight about how this work. 
 
 2. Download a software called Obsidian. Open the adjustment File with obsidian, Click LST_Example_Code file.
 
