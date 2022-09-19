@@ -7,7 +7,7 @@ I work on this only out of my interest and further scientific use.
 
 It will take rise for taking exams by using it. I am not reponsible for that.
 
-So it is not allowed to share with anyone. ( I will share it until its perfect)
+So it is not allowed to share without permission. ( I may share after it becomes perfect)
 
 
 
