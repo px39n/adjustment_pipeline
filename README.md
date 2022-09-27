@@ -9,7 +9,7 @@ It will take rise for taking exams by using it. I am not reponsible for that.
 
 So it is not allowed to share without permission unless its in trust list  ( I may share after it becomes perfect)
 
-Current Trust List: (Sama, YASSINE, Jawher, 柏林约饭组)
+Current Trust List: (Sama, YASSINE, Jawher, 柏林HPYF组)
 
 
 
