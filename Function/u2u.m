@@ -40,6 +40,10 @@ elseif unit=="mgon"
 out = number.*pi./200./1000;   
 elseif unit=="gon"
 out= number.*pi./200;    
+elseif unit=="a"  
+out= 1-number.*0.01/2 ;
+elseif unit=="s"
+out= 0.01*number+(1-0.01*number)/2;
 elseif unit=="tomm"
 out=number.*1000;  
 elseif unit=="tocm"

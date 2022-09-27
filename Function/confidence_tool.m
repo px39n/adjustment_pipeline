@@ -19,7 +19,8 @@ classdef confidence_tool
             %   Detailed explanation goes here
             Con_ab=norminv([1-prob,prob]);
             Con_AB=  e_mean+t_sigma*Con_ab;
-            disp(sprintf("The interval is [%.3f,%.3f] for %.3f",Con_AB(1),Con_AB(2),prob))
+            disp(sprintf("The interval boundary is [%.4g,%.4g]",Con_AB(1),Con_AB(2)))
+            disp(sprintf("The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             Ndeal(['a','b'],Con_AB)
         end
         
@@ -28,7 +29,8 @@ classdef confidence_tool
             %   Detailed explanation goes here
             Con_ab=tinv([1-prob,prob],dof);
             Con_AB=  e_mean+e_sigma*Con_ab;
-            disp(sprintf("The interval is [%.3f,%.3f] for %.3f",Con_AB(1),Con_AB(2),prob))    
+            disp(sprintf("The interval boundary is [%.4g,%.4g]",Con_AB(1),Con_AB(2)))
+            disp(sprintf("The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             Ndeal(['a','b'],Con_AB)
         end      
         
@@ -37,8 +39,9 @@ classdef confidence_tool
             %   Detailed explanation goes here
 
             Con_ab=chi2inv([1-prob,prob],dof);
-            Con_AB=e_sigma*sqrt(Con_ab/dof);
-            disp(sprintf("The interval is [%.3f,%.3f] for %.3f",Con_AB(1),Con_AB(2),prob))
+            Con_AB=e_sigma*sqrt(dof./Con_ab);
+            disp(sprintf("The interval boundary is [%.4g,%.4g]",Con_AB(1),Con_AB(2)))
+            disp(sprintf("The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             Ndeal(['a','b'],Con_AB)
         end              
         
@@ -48,7 +51,8 @@ classdef confidence_tool
  
             Con_ab=finv([1-prob,prob],dof1,dof2);
             Con_AB = e_sigma1/e_sigma2*sqrt(1./[Con_ab(2),Con_ab(1)]);
-            disp(sprintf("The interval is [%.3f,%.3f] for %.3f",Con_AB(1),Con_AB(2),prob))
+            disp(sprintf("The interval boundary is [%.4g,%.4g]",Con_AB(1),Con_AB(2)))
+            disp(sprintf("The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             Ndeal(['a','b'],Con_AB)
         end      
         
@@ -64,6 +68,8 @@ classdef confidence_tool
             
             obj.plot_dis(x,normpdf(x),Statistic,Con_ab, "Norm")
             
+            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
+            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
                 disp('reject the H0, significant smaller then')
             elseif Statistic>=Con_ab(2)
@@ -88,7 +94,8 @@ classdef confidence_tool
             x=minplot:0.01:maxplot;
             
             obj.plot_dis(x,tpdf(x,dof),Statistic,Con_ab, "T")
-            
+            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
+            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
                 disp('reject the H0, significant smaller then')
             elseif Statistic>=Con_ab(2)
@@ -110,7 +117,8 @@ classdef confidence_tool
             x=minplot:0.01:maxplot;
             
             obj.plot_dis(x,chi2pdf(x,dof),Statistic,Con_ab, "Chi")
-            
+            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
+            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
                 disp('reject the H0, significant smaller then')
             elseif Statistic>=Con_ab(2)
@@ -134,7 +142,8 @@ classdef confidence_tool
             x=minplot:0.01:maxplot;
             
             obj.plot_dis(x,fpdf(x,dof1,dof2),Statistic,Con_ab, "F_Distribution")
-            
+            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
+            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
                 disp('reject the H0, significant smaller then')
             elseif Statistic>=Con_ab(2)
@@ -153,7 +162,7 @@ classdef confidence_tool
             xlabel("theoretic stats")
             ylabel("pdf")
             % Plot the x^2 - distribution 
-            xline(stats,'-',{sprintf("Stats(%.3f)",stats)},LineWidth=2);
+            xline(stats,'-',{sprintf("Stats(%.2f)",stats)},LineWidth=2);
             xline(Con_ab(1),':',{'a'});
             xline(Con_ab(2),':',{'b'});
         end  
