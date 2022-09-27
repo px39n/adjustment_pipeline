@@ -4,12 +4,12 @@ function list_info=definedatum(xystr,number,norm)
 
 ## Template  
 
-``` 
-list_info=definedatum("y:x",[9 6],"norm");
-list_info=definedatum("yy:xxx:dd","ALL");
-list_info=definedatum("yy:xxx:dd","ALL","norm");
-list_info=definedatum("h","ALL");
-```
+| Datum Type             | B Constraint                               | G Constraint                               |
+| ------------ | ------------------------------------------ | ------------------------------------------ |
+| x, y  Datum  | list_info=definedatum("y:x",[9 6],"norm"); | list_info=definedatum("y:x","ALL","norm"); |
+| Height Datum | list_info=definedatum("h",[9 6],"norm");   | list_info=definedatum("h","ALL","norm");   |
+| Other Datum  | list_info=definedatum("x",[9 6],"norm");   | list_info=definedatum("x","ALL","norm");   |
+
 
 ## Description 
 根据指定的datum点，来计算出点在X_中的索引array，仅有datum点被用来产生B或G, 仅有datum被用来正则化。
