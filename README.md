@@ -7,8 +7,9 @@ I work on this only out of my interest and further scientific use.
 
 It will take rise for taking exams by using it. I am not reponsible for that.
 
-So it is not allowed to share with anyone. ( I will share it until its perfect)
+So it is not allowed to share without permission unless its in trust list  ( I may share after it becomes perfect)
 
+Current Trust List: (Sama, YASSINE, Jawher)
 
 
 
