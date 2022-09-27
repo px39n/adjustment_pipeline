@@ -56,7 +56,7 @@ for i=1:size(File,1)
     elseif flag=="PTX" ||  flag=="3st"
         number=num2str(File(i,1));
         Result_hat=[Result_hat; File(i,3)];
-    elseif flag=="DIS" ||  flag=="DIR" 
+    elseif flag=="DIS" ||  flag=="DIR"  || flag=="LEVEL"
         number=[num2str(File(i,1)) '_' num2str(File(i,2))];
         Result_hat=[Result_hat; File(i,3)];
     elseif flag=="W"
