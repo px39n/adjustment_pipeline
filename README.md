@@ -27,7 +27,13 @@ There are three steps to handle it
 
 1. There are 13 examples in Template_xxx mlx, which are corresponding to the exercises in courses. Just copy the code following the instruction. And you will have a insight about how this work. 
 
+https://user-images.githubusercontent.com/53490111/192404658-d392c742-5d49-4b64-83da-13fe9b605c18.mp4
+
 2. Download a software called Obsidian. Open the adjustment File with obsidian, Click LST_Example_Code file.
+
+https://user-images.githubusercontent.com/53490111/192404757-90feefce-a19e-4f1e-b4bc-0bba2e2fa7a7.mp4
+
+Download here: https://obsidian.md/
 
 3. In this file, There will be detailed (API) or what we called the tutorial. Its very simple, understand it combining the template.
 
