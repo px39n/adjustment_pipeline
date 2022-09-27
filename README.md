@@ -30,9 +30,12 @@ There are three steps to handle it
 https://user-images.githubusercontent.com/53490111/192404658-d392c742-5d49-4b64-83da-13fe9b605c18.mp4
 
 2. Download a software called Obsidian. Open the ==Open_me_with_Obsidian== File with [obsidian](https://obsidian.md/) Software, Click LST_Example_Code file.
+![image](https://user-images.githubusercontent.com/53490111/192405742-42e771a0-d44a-4ccd-8af6-ab093e7aab45.png)
+![image](https://user-images.githubusercontent.com/53490111/192405764-03211a84-8bcc-4dfc-96d5-110301829ea6.png)
+![image](https://user-images.githubusercontent.com/53490111/192405829-95e659df-bf7f-4a42-a871-4466659a39d3.png)
 
-https://user-images.githubusercontent.com/53490111/192404757-90feefce-a19e-4f1e-b4bc-0bba2e2fa7a7.mp4
-
+<img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405976-ee1aa2e7-7b50-4a05-bb5a-dd9de2abe3a2.png">
+This can switch the preview, to markdown view. or backward.
  
 
 3. In this file, There will be detailed (API) or what we called the tutorial. Its very simple, understand it combining the template.
