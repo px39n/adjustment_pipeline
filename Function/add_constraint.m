@@ -19,7 +19,9 @@ function cons_info = add_constraint(flag,varargin)
         BBB_new=BBB-BBB;
         BBB_new(:,list_info)=BBB(:,list_info);
         cons_info{1}=BBB_new;
-        cons_info{2}=BBB_new*X_;
+        Ndeal(X_,X_)
+        Ndeal(X_(setdiff(1:length(X_),list_info)),zeros(length(X_(setdiff(1:length(X_),list_info))),1))
+        cons_info{2}=eval(varargin{1});
         cons_info{4}="Trace formula, B is formed by geography";
         
         

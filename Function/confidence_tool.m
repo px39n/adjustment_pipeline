@@ -64,7 +64,7 @@ classdef confidence_tool
             
             maxplot=max([Con_ab(1),Con_ab(2),Statistic])+3;
             minplot=min([Con_ab(1),Con_ab(2),Statistic])-3;
-            x=minplot:0.01:maxplot;
+            x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,normpdf(x),Statistic,Con_ab, "Norm")
             
@@ -91,7 +91,7 @@ classdef confidence_tool
             
             maxplot=max([Con_ab(1),Con_ab(2),Statistic])+3;
             minplot=min([Con_ab(1),Con_ab(2),Statistic])-3;
-            x=minplot:0.01:maxplot;
+            x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,tpdf(x,dof),Statistic,Con_ab, "T")
             disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
@@ -114,7 +114,7 @@ classdef confidence_tool
             
             maxplot=max([Con_ab(1),Con_ab(2),Statistic])+3;
             minplot=min([Con_ab(1),Con_ab(2),Statistic])-3;
-            x=minplot:0.01:maxplot;
+            x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,chi2pdf(x,dof),Statistic,Con_ab, "Chi")
             disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
@@ -139,7 +139,7 @@ classdef confidence_tool
             
             maxplot=max([Con_ab(1),Con_ab(2),Statistic])+3;
             minplot=min([Con_ab(1),Con_ab(2),Statistic])-3;
-            x=minplot:0.01:maxplot;
+            x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,fpdf(x,dof1,dof2),Statistic,Con_ab, "F_Distribution")
             disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))

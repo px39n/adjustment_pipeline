@@ -13,7 +13,7 @@
 ```
 
 ## Description 
-Convert, or inverse the normalization of X_
+Convert, or inverse the normalization(sum=0) of X_
 
 ## Parameters 
 
