@@ -10,7 +10,7 @@ classdef confidence_tool
         function obj = confidence_tool()
             %CONFIDENCE_TOOL Construct an instance of this class
             %   Detailed explanation goes here
-            obj.Property1 = 1;
+
         end
 
         
@@ -67,15 +67,19 @@ classdef confidence_tool
             x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,normpdf(x),Statistic,Con_ab, "Norm")
-            
-            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
-            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
+            disp(sprintf('Test Statistic: %.2f ,Critical value=[%.2f,%.2f]',Statistic,Con_ab(1),Con_ab(2)))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
-                disp('reject the H0, significant smaller then')
+                disp(sprintf('1.Reject the null hypothesis H0: Same'))
+                disp(sprintf('1.Reject HC: Significant bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2,Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             elseif Statistic>=Con_ab(2)
-                disp('Rejects the H0, significant bigger then')
+                disp(sprintf('1,Reject the null hypothesis H0: Same'))
+                disp(sprintf('1,Reject HC: Significant smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             else
-                disp('Fails to reject the H0') 
+                disp('Fails to reject the null hypothesis H0') 
             end
             stats=Statistic;
 
@@ -94,14 +98,19 @@ classdef confidence_tool
             x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,tpdf(x,dof),Statistic,Con_ab, "T")
-            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
-            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
+            disp(sprintf('Test Statistic: %.2f ,Critical value=[%.2f,%.2f]',Statistic,Con_ab(1),Con_ab(2)))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
-                disp('reject the H0, significant smaller then')
+                disp(sprintf('1.Reject the null hypothesis H0: Same'))
+                disp(sprintf('1.Reject HC: Significant bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2,Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             elseif Statistic>=Con_ab(2)
-                disp('Rejects the H0, significant bigger then')
+                disp(sprintf('1,Reject the null hypothesis H0: Same'))
+                disp(sprintf('1,Reject HC: Significant smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             else
-                disp('Fails to reject the H0') 
+                disp('Fails to reject the null hypothesis H0') 
             end
 
         end      
@@ -117,14 +126,20 @@ classdef confidence_tool
             x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,chi2pdf(x,dof),Statistic,Con_ab, "Chi")
-            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
-            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
+            
+            disp(sprintf('Test Statistic: %.2f ,Critical value=[%.2f,%.2f]',Statistic,Con_ab(1),Con_ab(2)))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
-                disp('reject the H0, significant smaller then')
+                disp(sprintf('1.Reject the null hypothesis H0: Same'))
+                disp(sprintf('1.Reject HC: Significant bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2,Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             elseif Statistic>=Con_ab(2)
-                disp('Rejects the H0, significant bigger then')
+                disp(sprintf('1,Reject the null hypothesis H0: Same'))
+                disp(sprintf('1,Reject HC: Significant smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             else
-                disp('Fails to reject the H0') 
+                disp('Fails to reject the null hypothesis H0') 
             end
             stats=Statistic;
 
@@ -134,7 +149,7 @@ classdef confidence_tool
             %METHOD1 Summary of this method goes here
             %   Detailed explanation goes here
              
-            Statistic = t_sigma1^2/t_sigma2^2;
+            Statistic = e_sigma1^2/e_sigma2^2;
             Con_ab=finv([1-prob,prob],dof1,dof2); 
             
             maxplot=max([Con_ab(1),Con_ab(2),Statistic])+3;
@@ -142,14 +157,21 @@ classdef confidence_tool
             x=linspace(minplot,maxplot);
             
             obj.plot_dis(x,fpdf(x,dof1,dof2),Statistic,Con_ab, "F_Distribution")
-            disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
-            disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
+            %disp(sprintf("One Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(prob)*100,(1-prob)*100))
+            %disp(sprintf("Two Side: The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
+            disp(sprintf('Test Statistic (s2/s1)^2: %.2f ,Critical value=[%.2f,%.2f]',Statistic,Con_ab(1),Con_ab(2)))
             if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
-                disp('reject the H0, significant smaller then')
+                disp(sprintf('1.Reject the null hypothesis H0: Same'))
+                disp(sprintf('1.Reject HC: Significant bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2,Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             elseif Statistic>=Con_ab(2)
-                disp('Rejects the H0, significant bigger then')
+                disp(sprintf('1,Reject the null hypothesis H0: Same'))
+                disp(sprintf('1,Reject HC: Significant smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
             else
-                disp('Fails to reject the H0') 
+                disp('Fails to reject the null hypothesis H0') 
             end
             stats=Statistic;
 
