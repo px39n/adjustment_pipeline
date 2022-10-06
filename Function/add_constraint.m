@@ -13,6 +13,7 @@ function cons_info = add_constraint(flag,varargin)
     
     if flag=="B"
         X_=evalin("base",'X_');
+        X_O=evalin("base","X_O");
         list_info=evalin("base",'list_info');
         list_info=reshape(list_info{1}',[],1)';
         BBB=jacobian(varargin{1},X_);
@@ -20,6 +21,7 @@ function cons_info = add_constraint(flag,varargin)
         BBB_new(:,list_info)=BBB(:,list_info);
         cons_info{1}=BBB_new;
         Ndeal(X_,X_)
+        Ndeal(X_O,X_O)
         Ndeal(X_(setdiff(1:length(X_),list_info)),zeros(length(X_(setdiff(1:length(X_),list_info))),1))
         cons_info{2}=eval(varargin{1});
         cons_info{4}="Trace formula, B is formed by geography";
