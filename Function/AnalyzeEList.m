@@ -61,5 +61,5 @@ end
 evalin("base","syms"+X_O+";")
 evalin("base","X_O=["+X_O+"];")
 evalin("base","[L_i,X_i]=findDIR();")
-
+evalin("base","X_sym=X_;")
 end

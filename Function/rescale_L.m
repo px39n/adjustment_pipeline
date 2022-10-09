@@ -19,6 +19,6 @@ L_data=evalin('base',"L_data");
 [L_data,rescale_L]=normalizeX_(L_data,"order",list_info); % decide if normalize
 assignin("base","L_data",L_data);
 assignin("base","rescale_L1",rescale_L);
- 
+disp("L_data=L_data-centroid")
 end 
 
