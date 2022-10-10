@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "37cb32b598260a42",
+    "type": "split",
+    "children": [
+      {
+        "id": "664401a6b0410f82",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Home.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "27a090eafe75e0b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3116d400397bcd8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5a80f4d32e06db2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0ed1a107b1dbdc24",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "p2SL",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 302
+  },
+  "right": {
+    "id": "da1b9f8564dd3b8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "33ee2e3c6e4b34d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82fe5a8a329f8d07",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Home.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "080dcd062a4dbcc6",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "2b018e289d06822b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Home.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 199
+  },
+  "active": "664401a6b0410f82",
+  "lastOpenFiles": [
+    "Exam Tutorial/2. Customized LST Pipeline.md",
+    "Home.md",
+    "Untitled.md",
+    "Lecture Notes/AAA/Overview of Statistic.md",
+    "Lecture Notes/AAA/Overview Of Network.md",
+    "Lecture Notes/AAA/Overview of Propagation.md",
+    "Lecture Notes/AAA/Overview of Quality Assessment.md",
+    "Lecture Notes/AAA/Overview of LST.md",
+    "Lecture Notes/AAA/Questions.md",
+    "Lecture Notes/AAA/S transformation.md"
+  ]
+}
