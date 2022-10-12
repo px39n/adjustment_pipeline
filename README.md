@@ -12,7 +12,6 @@ So it is not allowed to share without permission unless its in trust list  ( I m
 Current Trust List: (Sama, YASSINE, Jawher, 柏林四人帮, Taruna)
 
 
-
 # What these code can do?
 
 3 mins for solving any problem in Adjustment. Especially the problem in adjustment (TUB) courses.
@@ -20,10 +19,23 @@ Current Trust List: (Sama, YASSINE, Jawher, 柏林四人帮, Taruna)
 not only (Linear, non-linear, Total LST, constraint, condition, combined, dash,unknown as measurement, datum,..... anything)..
 
 
-# Fast startup:
+# How it work
+So, for any adjustment problem. We always have to following procedure:
+1 Input data including 
+- Write Measurement right and its value               (L_: Measurement symbol L_data : Measurement data)
+- Write Handwriting Error free point and its value    (Free_: Free error symbol Free_data: Free error data)
+- Write Unkown and its value                          (X_: Unknown symbol X_data : Unknown data)
+2 Form Function Model                                 (F_: Function Model)
+3 Form Stochastic Model.                              (S_LL: Stochastic Model)
+4 Define Datum and Constraint Model If needed.        (FB_: Constraint Model)
+After that, We have many choices to adjust that. Like GM Model(L1, L2, Linear), GH model, VCE etc,.
+And you will have to use a bunch of tools to assess the quality.
+
+But, thanks to this program, you only have to translate your handwriting procedure 1-4 into code, and tell it what question it is.
+and it will automatically complete all other things for you.
+
+# How to find example?
 There are three steps to handle it
-
-
 
 1. There are 13 examples in Template_xxx mlx, which are corresponding to the exercises in courses. Just copy the code following the instruction. And you will have a insight about how this work. 
 
@@ -40,28 +52,8 @@ This can switch the preview, to markdown view. or backward.
 3. In this file, There will be detailed (API) or what we called the tutorial. Its very simple, understand it combining the template.
 
 
+ 
 
-
-# More: 
-Free_: Free error symbol (symbol like a sign xyz)
-
-Free_data: Free error data
-
-Free_: Free error symbol
-
-L_: Measurement symbol
-
-L_data : Measurement data
-
-X_: Unknown symbol
-
-X_data : Unknown data
-
-S_LL: Stochastic Model
-
-L_0: L_dash Vector
-
-F_: Function Model
 
 
  
