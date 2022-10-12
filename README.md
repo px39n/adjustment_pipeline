@@ -28,6 +28,7 @@ So, for any adjustment problem. We always have to following procedure:
 - Write Measurement right and its value               (L_: Measurement symbol L_data : Measurement data)
 - Write Handwriting Error free point and its value    (Free_: Free error symbol Free_data: Free error data)
 - Write Unkown and its value                          (X_: Unknown symbol X_data : Unknown data)
+
 2 Form Function Model                                 (F_: Function Model)
 
 3 Form Stochastic Model.                              (S_LL: Stochastic Model)
