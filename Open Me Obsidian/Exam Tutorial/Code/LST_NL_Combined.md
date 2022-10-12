@@ -29,9 +29,9 @@ title: Combined with XY as observation
 color: 200, 200, 200
 ```
 Elist=["Free_=|Ext('comb_fix.txt','y:x','PTYX')|"
-    "Free_data=[Ext('comb_fix.txt','y:x','PTYX');Ext('comb_new.txt','yl:xl','PTYX')]"
-    "L_=|Ext('comb_dir.txt','DIR','DIR')|Ext('comb_dis.txt','DIS','DIS')|"
-    "L_data=[u2u('1gon')*Ext('comb_dir.txt','DIR','DIR');Ext('comb_dis.txt','DIS','DIS')]"
+    "Free_data=[Ext('comb_fix.txt','y:x','PTYX')]"
+    "L_=|Ext('comb_dir.txt','DIR','DIR')|Ext('comb_dis.txt','DIS','DIS')|Ext('comb_new.txt','yl:xl','PTYX')|"
+    "L_data=[u2u('1gon')*Ext('comb_dir.txt','DIR','DIR');Ext('comb_dis.txt','DIS','DIS');Ext('comb_new.txt','yl:xl','PTYX')]"
     "X_=|Ext('comb_new.txt','y:x','PTYX')|Ext('comb_dir.txt','w','W')|"
     "X_data=[Ext('comb_new.txt','y:x','PTYX');Ext('comb_dir.txt','w','W')]"];
 AnalyzeEList(Elist)

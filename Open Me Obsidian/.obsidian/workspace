@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "2f12929033fc70e9",
+        "id": "a436fb226206e4f5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exam Tutorial/Code/LST_NL_Level.md",
+            "file": "Exam Tutorial/Code/LST_NL_Combined.md",
             "mode": "preview",
             "backlinks": false,
             "source": true
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exam Tutorial/Code/LST_NL_Level.md",
+                "file": "Exam Tutorial/Code/LST_NL_Combined.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exam Tutorial/Code/LST_NL_Level.md"
+                "file": "Exam Tutorial/Code/LST_NL_Combined.md"
               }
             }
           }
@@ -106,9 +106,10 @@
     "direction": "horizontal",
     "width": 199
   },
-  "active": "2f12929033fc70e9",
+  "active": "a436fb226206e4f5",
   "lastOpenFiles": [
     "Exam Tutorial/1. Template Code for Problem.md",
+    "Home.md",
     "Exam Tutorial/2. Customized LST Pipeline.md",
     "Lecture Notes/AAA/Overview of Quality Assessment.md",
     "Exam Tutorial/Theoretical Quetions.md",
@@ -116,7 +117,6 @@
     "Lecture Notes/AAA/Overview of LST.md",
     "Lecture Notes/Formula/Least Square/Iter Check.md",
     "Exam Tutorial/Code/Confidence All.md",
-    "Exam Tutorial/Function/confidence_tool.md",
-    "Exam Tutorial/Other. API of Function.md"
+    "Exam Tutorial/Function/confidence_tool.md"
   ]
 }
