@@ -48,9 +48,12 @@ There are three steps to handle it
 
 1. There are 13 examples in Template_xxx mlx, which are corresponding to the exercises in courses. Just copy the code following the instruction. And you will have a insight about how this work. 
 
+
+# How to Install Tutorial
+
 https://user-images.githubusercontent.com/53490111/192404658-d392c742-5d49-4b64-83da-13fe9b605c18.mp4
 
-2. Download a software called Obsidian. Open the ==Open_me_with_Obsidian== File with [obsidian](https://obsidian.md/) Software, Click LST_Example_Code file.
+1. Download a software called Obsidian. Open the ==Open_me_with_Obsidian== File with [obsidian](https://obsidian.md/) Software, Click LST_Example_Code file.
 <img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405742-42e771a0-d44a-4ccd-8af6-ab093e7aab45.png">
 <img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405764-03211a84-8bcc-4dfc-96d5-110301829ea6.png">
 <img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405829-95e659df-bf7f-4a42-a871-4466659a39d3.png">
@@ -58,7 +61,7 @@ https://user-images.githubusercontent.com/53490111/192404658-d392c742-5d49-4b64-
 This can switch the preview, to markdown view. or backward.
  
 
-3. In this file, There will be detailed (API) or what we called the tutorial. Its very simple, understand it combining the template.
+2. In this file, There will be detailed (API) or what we called the tutorial. Its very simple, understand it combining the template.
 
 
  
