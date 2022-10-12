@@ -8,23 +8,23 @@
 
 # Basic
 
-|                      | Eq                    | Lr                      | NonLinear GM            | GM with L1              |
-| -------------------- | --------------------- | ----------------------- | ----------------------- | ----------------------- |
-| Observation Equation | [[L,l]]               | [[L,l]]                 | [[L,l]]  , [[X,x]]      | [[L,l]]  , [[X,x]]      |
-| Function Model       | [[Φ#GM]]              | [[Φ#GM]]                | [[Φ#GM]]                | [[Φ#GM]]                |
-| Constraint Model     |                       |                         |                         |                         |
-| Design Matrix        |                       | [[Design Matrix#A \|A]] | [[Design Matrix#A \|A]] | [[Design Matrix#A \|A]] |
-| Stochastic Model     | [[Σ, P]]              | [[Σ, P]]                | [[Σ, P]]                | [[Σ, P]]                |
-| Redundancy           | [[r#Any]]             | [[r#Any]]               | [[r#Any]]               | [[r#Any]]               |
-| While                |                       |                         | [[Iter Check#GM]]       | [[Iter Check#GM]]       |
-| Observation Equation | [[Observation Eq#Eq]] | [[Observation Eq#GM]]   | [[Observation Eq#GM]]   | [[Observation Eq#GM]]   |
-| Object Function      | [[Ω#Eq]]              | [[Ω#GM]]                | [[Ω#GM]]                | [[Ω#L1]]                |
-| Normal Euqation      | [[Normal Eq#Eq]]      | [[Normal Eq#Lr]]        | [[Normal Eq#GM]]        | [[Normal Eq#GM]]        |
-| Update X,L,v         |                       | [[Update#Lr]]           | [[Update#GM]]           | [[Update#GM]] [[Update#L1]]          |
-| Final Check          |                       | [[Final Check#Lr]]      | [[Final Check#NL]]      | [[Final Check#NL]]      |
-| end                  |                       |                         |                         |                         |
-| Propagation          |                       | [[Propogation LST#Lr]]  | [[Propogation LST#GM]]  | [[Propogation LST#GM]]  |
-|                      |                       |                         |                         |                         |
+|                      | Eq                    | Lr                      | NonLinear GM            | GM with L1                  | VCE |
+| -------------------- | --------------------- | ----------------------- | ----------------------- | --------------------------- | --- |
+| Observation Equation | [[L,l]]               | [[L,l]]                 | [[L,l]]  , [[X,x]]      | [[L,l]]  , [[X,x]]          |     |
+| Function Model       | [[Φ#GM]]              | [[Φ#GM]]                | [[Φ#GM]]                | [[Φ#GM]]                    |     |
+| Constraint Model     |                       |                         |                         |                             |     |
+| Design Matrix        |                       | [[Design Matrix#A \|A]] | [[Design Matrix#A \|A]] | [[Design Matrix#A \|A]]     |     |
+| Stochastic Model     | [[Σ, P]]              | [[Σ, P]]                | [[Σ, P]]                | [[Σ, P]]                    |     |
+| Redundancy           | [[r#Any]]             | [[r#Any]]               | [[r#Any]]               | [[r#Any]]                   |     |
+| While                |                       |                         | [[Iter Check#GM]]       | [[Iter Check#L1]]           |     |
+| Observation Equation | [[Observation Eq#Eq]] | [[Observation Eq#GM]]   | [[Observation Eq#GM]]   | [[Observation Eq#GM]]       |     |
+| Object Function      | [[Ω#Eq]]              | [[Ω#GM]]                | [[Ω#GM]]                | [[Ω#L1]]                    |     |
+| Normal Euqation      | [[Normal Eq#Eq]]      | [[Normal Eq#Lr]]        | [[Normal Eq#GM]]        | [[Normal Eq#GM]]            |     |
+| Update X,L,v         |                       | [[Update#Lr]]           | [[Update#GM]]           | [[Update#GM]] [[Update#L1]] |     |
+| Final Check          |                       | [[Final Check#Lr]]      | [[Final Check#NL]]      | [[Final Check#NL]]          |     |
+| end                  |                       |                         |                         |                             |     |
+| Propagation          |                       | [[Propogation LST#Lr]]  | [[Propogation LST#GM]]  | [[Propogation LST#GM]]      |     |
+|                      |                       |                         |                         |                             |     |
 
 # GM Model with Constraint
 
@@ -52,7 +52,7 @@
 | -------------------- | ----------------------------- | ------------------------------------------------------ |
 | Observation Equation | [[L,l]]  , [[X,x]]            | [[L,l]]  , [[X,x]]                                     |
 | Function Model       | [[Φ#GH]]                      | [[Φ#GH]]                                               |
-| Constraint Model     |                               |                                                        |
+| Constraint Model     |                               |   [[Condition#GH]]                                                       |
 | Design Matrix        | [[Design Matrix#GH \| A, J2]] | [[Design Matrix#GH \| A, J2]], [[Design Matrix#G \|G]] |
 | Stochastic Model     | [[Σ, P]]                      | [[Σ, P]]                                               |
 | Redundancy           | [[r#Any]]                     | [[r#Con]]                                              |

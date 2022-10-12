@@ -104,6 +104,17 @@ stats=conf.statistic_test_norm(u2u("5a"),e1,mean1,sig1);
 ``````
 
 
+``````ad-example
+collapse: close
+title: Get s and mean, dof for a list.
+color: 200, 200, 200
+```
+% s = 1 - α;  prob= s + α
+[mean1,s1,f1]=conf.mean_s_dof(x);
+[mean2,s2,f2]=conf.mean_s_dof(y);
+
+```
+``````
 
 
 ## API

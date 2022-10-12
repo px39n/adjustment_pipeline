@@ -4,7 +4,7 @@
 
 |  [[#Discussion]]        |     | Formula            | Explain                                                                   | Calculation |           |
 | -------- | --- | ------------------ | ------------------------------------------------------------------------- | ----------- | --------- |
-|          |     | $\mathbf{Q}_{v v}$ | Reliability Measures                                                      |             |           |
+|          |     |[[#Qxx]] | Reliability Measures                                                      |             |           |
 | Internal |     | [[##r]]            | Magnitude: Observation error, shown as residual.                          | [[##r]]     | 0 -- 1    |
 | ^^       |     | [[#EV]]            | Magnitude: (Same as [[##r]] ) but 100%                                    | [[#EV]]     | 0 -- 100% |
 | ^^       |     | [[#NV]]            | Magnitude: Blunder -- by T test for residual                              | [[#NV]]     | 0,2,4     |
@@ -22,6 +22,8 @@
 
 
 # Precision Measure
+## Qxx
+Precision expresses how precise our unknowns (e.g. coordinates) have been determined
 ## Propagation error
 $\mathbf{Q}_{\hat{x} \hat{x}}$ for unknowns
 
@@ -43,7 +45,7 @@ $\theta_K=\theta_F$
  
 # Assessment
 ## r
-
+The smaller r , the larger a gross error has to be in order to detect it
 $\mathbf{r_i}=\mathbf{Q}_{v v} \mathbf{P}$
 $\sum_{i=1}^n r_i=\operatorname{trace}\left(\mathbf{Q}_{v v} \mathbf{P}\right)=r$
 ## EV
@@ -98,22 +100,16 @@ $E G K_i=\left(1-r_i\right) G R Z W_i$
 Given:  
 $v,\boldsymbol{\Sigma}_{l l}, \sigma_0$ and thus $\mathbf{P}$
 
-|     | Left                          | Right        | Equation                                                                                                                                                                                                                  |
-| --- | ----------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     | $S_{0_{\mathrm{dist}}}$       | v, P, r      | $s_{0_{\text {dist }}}=\sqrt{\frac{\mathbf{v}_{\mathrm{dist}}^{\mathrm{T}} \mathbf{P}_{\mathrm{dist}} \mathbf{v}_{\mathrm{dist}}}{r_{\mathrm{dist}}}}$                                                                    |
-|     | $S_{0_{\mathrm{dir}}}$        | v, P, r      | $s_{0_{\mathrm{dir}}}=\sqrt{\frac{\mathbf{v}_{\mathrm{dir}}^{\mathrm{T}} \mathbf{P}_{\mathrm{dir}} \mathbf{v}_{\mathrm{dir}}}{r_{\mathrm{dir}}}}$                                                                         |
-|     | $r_{\text {dist }}$           | (Qvv, P)dist | Trace(QvvP)                                                                                                                                                                                                               |
-|     | $\mathbf{Q}_{v v} \mathbf{P}$ |              | $\mathbf{Q}_{v v} \mathbf{P}=\left[\begin{array}{c:c}\left(\mathbf{Q}_{v v} \mathbf{P}\right)_{\text {dist }} & * \\ \hdashline * & \left(\mathbf{Q}_{v v} \overline{\mathbf{P}}\right)_{\text {dir }}\end{array}\right]$ |
-|     | $\mathbf{v}_{\text {dist }}$  | v            | sub vector                                                                                                                                                                                                                |
-|     | $\mathbf{P}_{\text {dist }}$  | P            | sub matrix                                                                                                                                                                                                                |
+|                                   | Equation                                                                                                                                                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Initilize S0                      | $s_{0_{\text {a }}}=\sqrt{\frac{\mathbf{v}_{\mathrm{a}}^{\mathrm{T}} \mathbf{P}_{\mathrm{a}} \mathbf{v}_{\mathrm{a}}}{r_{\mathrm{a}}}}$                                                                                   |
+| 1. Iteration Check                | \|s_o_all-1\|>10^-4                                                                                                                                                                                                       |
+| 2. Update The SLL                 | $\boldsymbol{\Sigma}_{l l}=\alpha_{0_{1,1}}^2 \mathbf{Q}_1+\alpha_{0_{2,1}}^2 \mathbf{Q}_2+\cdots+\alpha_{0_{k, 1}}^2 \mathbf{Q}_k$                                                                                       |
+| 2.2 Update SLL Others             |  Q, and P                                                                                                                                                                                                                         |
+| 3. Adjustment                     | Trace(QvvP)                                                                                                                                                                                                               |
+| 4. Update Q\*P for each Component | $\mathbf{Q}_{v v} \mathbf{P}=\left[\begin{array}{c:c}\left(\mathbf{Q}_{v v} \mathbf{P}\right)_{\text {dist }} & * \\ \hdashline * & \left(\mathbf{Q}_{v v} \overline{\mathbf{P}}\right)_{\text {dir }}\end{array}\right]$ |
+| 5. Update S0 for each Component   | $s_{0_{i, 1}}^2=\frac{\mathbf{v}_i^{\mathrm{T}} \mathbf{P}_{i, 0} \mathbf{V}_i}{r_i}$                                                                                                                                     |
+| 6. Update a for each Component    | $\alpha_{0_{i, 1}}^2=\alpha_{0_{i, 0}}^2 \cdot s_{0_{i, 1}}^2$                                                                                                                                                            |
 
-$\boldsymbol{\Sigma}_{l l}=\sigma_0^2 \mathbf{Q}_{l l}$
-
-1. Initilize: $\boldsymbol{\Sigma}_{l l}=\sigma_{0_1}^2\left(\alpha_{0_1}^2 \mathbf{Q}_1\right)+\sigma_{0_2}^2\left(\alpha_{0_2}^2 \mathbf{Q}_2\right)+\cdots+\sigma_{0_k}^2\left(\alpha_{0_k}^2 \mathbf{Q}_k\right)$
-
-2. Iteratively caculated $s_{0_{i, 1}}^2=\frac{\mathbf{v}_i^{\mathrm{T}} \mathbf{P}_{i, 0} \mathbf{V}_i}{r_i}$
-
-3. Update $\alpha_{0_{i, 1}}^2=\alpha_{0_{i, 0}}^2 \cdot s_{0_{i, 1}}^2$
-
-
-Stop when All $s_{0_i}^2=1.0000$
+ 
+ 

@@ -17,13 +17,7 @@ Variance is proportional to the length and instrument setup. where the P is inve
 ![](https://i.imgur.com/H7XHhSb.png)
 
 
-
-| Problem    | Constraint |     |     |
-| ---------- | ---------- | --- | --- |
-| GH problem | deficiency |     |     |
-| GM Problem | deficiency |     |     |
-
-
+ 
 ## Planning of a network
 
 1. Define Problem task
@@ -46,9 +40,8 @@ Variance is proportional to the length and instrument setup. where the P is inve
 
 
 
-## COns
-
-
-$Left1=\sum_{i=1}^p \hat{x}_i=0$
-$Left2=\sum_{i=1}^p \hat{y}_i=0$
-$Left3=\sum_{i=1}^p\left(y_i^{\prime} \hat{x}_i-x_i^{\prime} \hat{y}_i\right)=0$
+## Constraint
+$Translation1=\sum_{i=1}^p \hat{x}_i=0$
+$Translation2=\sum_{i=1}^p \hat{y}_i=0$
+$Rotation=\sum_{i=1}^p\left(y_i^{\prime} \hat{x}_i-x_i^{\prime} \hat{y}_i\right)=0$
+a^2+b^2+c^2=1

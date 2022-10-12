@@ -10,7 +10,8 @@ $\hat{\mathbf{L}}-\boldsymbol{\Phi}(\widehat{\mathbf{X}}) < \delta$
 $max({\hat{x}}) \leq \epsilon$ 
 (Magnitude: two order of result)
 ## L1
-$ max()) \leq  \epsilon$ 
+$\hat{\mathbf{L}}-\boldsymbol{\Phi}(\widehat{\mathbf{X}}) < \delta$ 
+$max({\hat{x}}) \leq \epsilon$ 
 $max(abs(\hat{V}_{last}-\hat{V}) \leq \epsilon$ 
 
 ## GH
