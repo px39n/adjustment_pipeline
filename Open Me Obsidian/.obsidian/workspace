@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Exam Tutorial/Code/LST_NL_Combined.md",
-            "mode": "preview",
+            "mode": "source",
             "backlinks": false,
             "source": true
           }
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "p2SL",
+                "query": "remove",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -50,7 +50,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -108,6 +109,8 @@
   },
   "active": "a436fb226206e4f5",
   "lastOpenFiles": [
+    "Exam Tutorial/Function/Get_Funclist.md",
+    "Exam Tutorial/Code/LST_NL_Combined.md",
     "Exam Tutorial/1. Template Code for Problem.md",
     "Home.md",
     "Exam Tutorial/2. Customized LST Pipeline.md",
@@ -115,8 +118,6 @@
     "Exam Tutorial/Theoretical Quetions.md",
     "Exam Tutorial/Function/S_transform.md",
     "Lecture Notes/AAA/Overview of LST.md",
-    "Lecture Notes/Formula/Least Square/Iter Check.md",
-    "Exam Tutorial/Code/Confidence All.md",
-    "Exam Tutorial/Function/confidence_tool.md"
+    "Lecture Notes/Formula/Least Square/Iter Check.md"
   ]
 }

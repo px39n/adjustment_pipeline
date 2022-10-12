@@ -9,6 +9,5 @@
 | ^^            |     | Calculation 2D Distance              | ```Get_Funlist(DIS,{'x' 'y'},'DIS')```                        |
 | Angular       |     | Calculation Angular                  | ```Get_Funlist(AN,{'x' 'y'},'AN')```                          |
 | ^^            |     | Calculation Angular                  | ```Get_Funlist(AN,{'DIR'},'DIR2AN')```                        |
-| Others        |     | Define the ordinal series （1st col) | ```Get_Funlist(YX,{},"Remove_l");  % for unknow is L_ also``` |
-
+| Others        |     | Define the ordinal series （1st col) | ```Get_Funlist(yl,{},"Remove_l");  % for unknow is L_ also``` |
 

@@ -129,7 +129,6 @@ for i=1:length(target)
             Funlist=[Funlist,target_str{i},';'];
         end
         Funlist=[Funlist,'];'];
-        Funlist=evalin("caller",Funlist);
     else
         error("wrong flag")
         

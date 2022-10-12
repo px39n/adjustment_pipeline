@@ -30,18 +30,18 @@ color: 200, 200, 200
 ```
 Elist=["Free_=|Ext('comb_fix.txt','y:x','PTYX')|"
     "Free_data=[Ext('comb_fix.txt','y:x','PTYX')]"
-    "L_=|Ext('comb_dir.txt','DIR','DIR')|Ext('comb_dis.txt','DIS','DIS')|Ext('comb_new.txt','yl:xl','PTYX')|"
-    "L_data=[u2u('1gon')*Ext('comb_dir.txt','DIR','DIR');Ext('comb_dis.txt','DIS','DIS');Ext('comb_new.txt','yl:xl','PTYX')]"
-    "X_=|Ext('comb_new.txt','y:x','PTYX')|Ext('comb_dir.txt','w','W')|"
-    "X_data=[Ext('comb_new.txt','y:x','PTYX');Ext('comb_dir.txt','w','W')]"];
+    "L_=|Ext('comb_dir.txt','DIR','DIR')|Ext('comb_dis.txt','DIS','DIS')|Ext('comb_newf.txt','yl:xl','PTYX')|"
+    "L_data=[u2u('1gon')*Ext('comb_dir.txt','DIR','DIR');Ext('comb_dis.txt','DIS','DIS');Ext('comb_newf.txt','yl:xl','PTYX')]"
+    "X_=|Ext('comb_new.txt','y:x','PTYX')|Ext('comb_newf.txt','y:x','PTYX')|Ext('comb_dir.txt','w','W')|"
+    "X_data=[Ext('comb_new.txt','y:x','PTYX');Ext('comb_newf.txt','y:x','PTYX');Ext('comb_dir.txt','w','W')]"];
 AnalyzeEList(Elist)
 
 [Var_ind,Var_name]=findVar();
-S_L=expand_V(ones(size(L_)),Var_ind,u2u("1mgon 1mm"));  
+S_L=expand_V(ones(size(L_)),Var_ind,u2u("1mgon 1mm 1cm 1cm"));  
 
 F_ = [Get_Funlist(DIR,{"x","y","w"},"DIR");
     Get_Funlist(DIS,{"x","y"},"DIS");
-    y;x;
+    y;x;  %or Get_Funlist(yl,{},"Remove_l"); Get_Funlist(xl,{},"Remove_l")
     ]; 
 
 ```
