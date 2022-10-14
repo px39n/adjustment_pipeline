@@ -41,30 +41,16 @@ And you will have to use a bunch of tools to assess the quality.
 
 But, thanks to this program, you only have to translate your handwriting procedure 1-4 into code, and tell it what question it is.
 
+and even you dont have to construct function model for networks, there are many predefined API and templates for that!
+
 and it will automatically complete all other things for you.
 
-# How to find example?
-There are three steps to handle it
-
-1. There are 13 examples in Template_xxx mlx, which are corresponding to the exercises in courses. Just copy the code following the instruction. And you will have a insight about how this work. 
 
 
-# How to Install Tutorial
 
-https://user-images.githubusercontent.com/53490111/192404658-d392c742-5d49-4b64-83da-13fe9b605c18.mp4
+# Where is the Tutorial?
+https://px39n.gitbook.io/workspace/
 
-1. Download a software called Obsidian. Open the ==Open_me_with_Obsidian== File with [obsidian](https://obsidian.md/) Software, Click LST_Example_Code file.
-<img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405742-42e771a0-d44a-4ccd-8af6-ab093e7aab45.png">
-<img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405764-03211a84-8bcc-4dfc-96d5-110301829ea6.png">
-<img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405829-95e659df-bf7f-4a42-a871-4466659a39d3.png">
-<img width="299" alt="image" src="https://user-images.githubusercontent.com/53490111/192405976-ee1aa2e7-7b50-4a05-bb5a-dd9de2abe3a2.png">
-This can switch the preview, to markdown view. or backward.
- 
-
-2. In this file, There will be detailed (API) or what we called the tutorial. Its very simple, understand it combining the template.
-
-
- 
 
 
 
