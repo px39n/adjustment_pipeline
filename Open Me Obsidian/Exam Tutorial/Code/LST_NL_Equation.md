@@ -333,7 +333,7 @@ S_L=ones(12,1)*u2u("1m");
 
 F_ =[a*x+b*y+c*z-d]; 
 
-FB_=[a1^2+a2^2+a3^2];
+FB_=[a^2+b^2+c^2];
 cons_info=add_constraint("fullrank",FB_);
 ```
 ``````

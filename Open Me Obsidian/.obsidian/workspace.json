@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b15bda425bec56bf",
+        "id": "bcf387225a8d66ca",
         "type": "tabs",
         "children": [
           {
-            "id": "05b5443a2d9bc485",
+            "id": "ffa2bfad102df15d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exam Tutorial/Theoretical Quetions.md",
+                "file": "Exam Tutorial/Code/LST_NL_Equation.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exam Tutorial/Theoretical Quetions.md",
+                "file": "Exam Tutorial/Code/LST_NL_Equation.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exam Tutorial/Theoretical Quetions.md"
+                "file": "Exam Tutorial/Code/LST_NL_Equation.md"
               }
             }
           }
@@ -117,17 +117,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "05b5443a2d9bc485",
+  "active": "ffa2bfad102df15d",
   "lastOpenFiles": [
-    "Exam Tutorial/Other. API of Function.md",
     "Exam Tutorial/1. Template Code for Problem.md",
+    "Lecture Notes/AAA/Overview Of Network.md",
+    "Exam Tutorial/Other. API of Function.md",
     "Exam Tutorial/Function/Get_Funclist.md",
     "Exam Tutorial/Code/LST_NL_Combined.md",
     "Exam Tutorial/Code/NL_Trilateration_con.md",
     "Exam Tutorial/Function/definedatum.md",
     "Exam Tutorial/Function/add_constraint.md",
     "Exam Tutorial/Code/LST_NL_Triangulation.md",
-    "Lecture Notes/AAA/Overview Of Network.md",
     "Lecture Notes/Network/Triangulation.md"
   ]
 }
