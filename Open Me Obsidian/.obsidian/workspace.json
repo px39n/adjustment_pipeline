@@ -4,17 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "9e1440ac3db2c1a0",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Lecture Notes/Probability World/Statistical Test.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": true
+        "id": "b15bda425bec56bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05b5443a2d9bc485",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exam Tutorial/Theoretical Quetions.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -32,7 +38,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -70,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture Notes/Probability World/Statistical Test.md",
+                "file": "Exam Tutorial/Theoretical Quetions.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -95,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture Notes/Probability World/Statistical Test.md"
+                "file": "Exam Tutorial/Theoretical Quetions.md"
               }
             }
           }
@@ -106,17 +114,20 @@
     "direction": "horizontal",
     "width": 199
   },
-  "active": "9e1440ac3db2c1a0",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "05b5443a2d9bc485",
   "lastOpenFiles": [
-    "Exam Tutorial/Code/Confidence All.md",
+    "Exam Tutorial/Other. API of Function.md",
     "Exam Tutorial/1. Template Code for Problem.md",
-    "Exam Tutorial/2. Customized LST Pipeline.md",
-    "Exam Tutorial/Code/LST_NL_Equation.md",
+    "Exam Tutorial/Function/Get_Funclist.md",
     "Exam Tutorial/Code/LST_NL_Combined.md",
+    "Exam Tutorial/Code/NL_Trilateration_con.md",
+    "Exam Tutorial/Function/definedatum.md",
+    "Exam Tutorial/Function/add_constraint.md",
+    "Exam Tutorial/Code/LST_NL_Triangulation.md",
     "Lecture Notes/AAA/Overview Of Network.md",
-    "Exam Tutorial/Code/LST_NL_Trilateration.md",
-    "Home.md",
-    "Lecture Notes/AAA/Overview of LST.md",
-    "Lecture Notes/AAA/Overview of Quality Assessment.md"
+    "Lecture Notes/Network/Triangulation.md"
   ]
 }

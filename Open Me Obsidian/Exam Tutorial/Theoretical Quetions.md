@@ -52,20 +52,44 @@ color: 200, 200, 200
 2 order of magnitude
 .
 ```
+
 ```ad-example
 collapse: close
 title: Can we shift the freenetwork
 color: 200, 200, 200
 We can shift this network (arbitrary in direction of ܪ , without affecting the observations
 ```
-# Deficency
-Difference with fixed error and freenetwork (5.p12)
-
-
 
 ```ad-example
 collapse: close
-title: Compromise between free and fixed control
+title: Whats the difference between GH and GM
+color: 200, 200, 200
+When there is an implicit relation between measurements, residuals and the unknown parameters. 
+
+
+This leads us to the Gauss-Helmert model [[Overview of LST]]
+```
+
+```ad-example
+collapse: close
+title: Advantages and Disadvantages of L1‐Estimation from reweighted L2‐ Estimation
+color: 200, 200, 200
+
+
+|     | adv                                  | dis                                                                                                                                            |
+| --- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| L1  | ![](https://i.imgur.com/NgICp8K.png) | Numerical result can converge to a wrong solution ; it can not be used as the last result because it does not have statistical interpretation. |
+| L2  | ![](https://i.imgur.com/qEtkzPM.png) | Only yields reasonable results if observation errors ~ N().                                                                                    |
+
+
+```
+
+# Deficency
+
+ 
+```ad-example
+collapse: close
+title: Compromise between free and fixed control Difference with fixed error and freenetwork (5.p12)
 color: 200, 200, 200
 Fixed Point will 100%. Free will 0%.
 将unknown引入作为观测值。
@@ -96,15 +120,13 @@ collapse: close
 title: Why VCE works interpret potential disparities.
 color: 200, 200, 200
  
-The unknowns for the two subtasks differ due to a difference in the stochastic models,
-including the iterative approach. Meanwhile, the standard deviations per group of subtask 4
-overestimated the unknowns a and b, while subtask 5 didn’t.
+ 
 
-While the results for the unknowns are very similar, the standard deviations differ more
-significantly. After improvement of the stochastic model using Variance Component Estimation,
-estimated unknowns are slightly lower than before. This indicates that the line parameters are very
-overestimated at first.
+While the results for the unknowns are very similar, the standard deviations differ more significantly. 
+overestimated or underestimate always
+so instead of only one value ߪ we use different variance factors are introduced for each group of observations.
 
+[[Overview of Quality Assessment#VCE Estimation]]
 ```
 
 
