@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exam Tutorial/2. Customized LST Pipeline.md",
+                "file": "Exam Tutorial/Code/LST_NL_Equation.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exam Tutorial/2. Customized LST Pipeline.md",
+                "file": "Exam Tutorial/Code/LST_NL_Equation.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exam Tutorial/2. Customized LST Pipeline.md"
+                "file": "Exam Tutorial/Code/LST_NL_Equation.md"
               }
             }
           }
@@ -120,14 +120,14 @@
   "active": "4bd6dc48572065c3",
   "lastOpenFiles": [
     "Exam Tutorial/1. Template Code for Problem.md",
-    "Exam Tutorial/Function/XXX_VarPro.md",
     "Exam Tutorial/2. Customized LST Pipeline.md",
+    "Exam Tutorial/Function/EList.md",
+    "Exam Tutorial/Code/LST_NL_Equation.md",
+    "Exam Tutorial/Function/XXX_VarPro.md",
     "Exam Tutorial/Code/Confidence All.md",
     "Exam Tutorial/Code/LST_NL_Level.md",
     "Exam Tutorial/Other. API of Function.md",
     "Exam Tutorial/Theoretical Quetions.md",
-    "Exam Tutorial/Code/LST_NL_Triangulation.md",
-    "Exam Tutorial/Code/LST_NL_Combined.md",
-    "Lecture Notes/AAA/Overview Of Network.md"
+    "Exam Tutorial/Code/LST_NL_Triangulation.md"
   ]
 }

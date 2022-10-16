@@ -40,6 +40,8 @@ elseif unit=="mgon"
 out = number.*pi./200./1000;   
 elseif unit=="gon"
 out= number.*pi./200;    
+elseif unit=="deg"
+out= number.*pi./180;    
 elseif unit=="a"  
 out= 1-number.*0.01/2 ;
 elseif unit=="s"
@@ -54,6 +56,8 @@ elseif unit=="togon"
 out= number./pi.*200;
 elseif unit=="tomgon"
 out = number./pi.*200.*1000;
+elseif unit=="todeg"
+out= number./pi.*180; 
 else
     error("The flag "+unit+" is not right ")
 end

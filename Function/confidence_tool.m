@@ -145,11 +145,11 @@ classdef confidence_tool
 
         end      
         
-        function stats=statistic_test_f(obj,prob, t_sigma1, t_sigma2,  e_sigma1, e_sigma2, dof1,dof2)
+        function stats=statistic_test_f(obj,prob, e_sigma1, e_sigma2, dof1,dof2)
             %METHOD1 Summary of this method goes here
             %   Detailed explanation goes here
              
-            Statistic = e_sigma1^2/e_sigma2^2;
+            Statistic = e_sigma2^2/e_sigma1^2;
             Con_ab=finv([1-prob,prob],dof1,dof2); 
             
             maxplot=max([Con_ab(1),Con_ab(2),Statistic])+3;

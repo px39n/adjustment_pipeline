@@ -20,6 +20,29 @@ F_=[V^(1/3)
 ```
 ``````
 
+``````ad-example
+collapse: close
+title: Fitting a Triangulation (Not network just geometry) 
+color: 200, 200, 200
+```
+ Elist=["Free_=||"
+    "Free_data=[]"
+    "L_=|a b c A B C|"
+    "L_data=[5;6;7;u2u('60gon 50gon 60gon')]"
+    "X_=|Tom_liang|"  %Im nothing but a luck charm for your here dont change it!
+    "X_data=[1.0]"
+    ];
+    
+AnalyzeEList(Elist);
+
+S_L=u2u("1cm 1cm 1cm 1gon 1gon 1gon");  
+
+F_=[A+B+C-pi
+    b*sin(A)-a*sin(B)
+    a*sin(C)-c*sin(A)];
+```
+``````
+
 
 
 ````````ad-example
@@ -205,7 +228,41 @@ F_ =[(y-ry).^2+(x-rx).^2-radius^2];
 
 ```
 ``````
-  
+
+``````ad-example
+collapse: close
+title: Circle_Total_LST with Polar Variance Propagation and Constraint!
+color: 200, 200, 200
+```
+
+Elist=["||=[]"
+    "|d [4 1]|t [4 1]|=[u2u('7.831m 10.4403m 4.4142m 7.0711m 363.5958gon 20.5547gon 250gon 109.0334gon')]"
+    "|x [4 1]|y [4 1]|=[d.*cos(t);d.*sin(t)]"
+    ];
+S_LL=diag(u2u("1mm 1mm 1mm 1mm 1mgon 1mgon 1mgon 1mgon")).^2;  
+[Temp_data,S_L] = XXX_VarPro(Elist,S_LL); %gon
+clear S_LL
+
+Elist=["Free_=||"
+    "Free_data=[]"
+    "L_=|x [3 1]|y [3 1]|"
+    "L_data=[Temp_data(1:3);Temp_data(5:7)]"
+    "X_=|rx ry radius|"
+    "X_data=[3; 2; 6]"
+	"LB_=|cons [1 1]|"
+	"LB_data=[0]"
+    ];
+AnalyzeEList(Elist)
+S_L=[S_L(1:3);S_L(5:7)]
+F_ =[(y-ry).^2+(x-rx).^2-radius^2]; 
+FB_=[(Temp_data(8)-ry).^2+(Temp_data(4)-rx).^2-radius^2]; 
+cons_info=add_constraint("fullrank",FB_);
+
+
+```
+``````
+
+
 ``````ad-example
 collapse: close
 title: From File

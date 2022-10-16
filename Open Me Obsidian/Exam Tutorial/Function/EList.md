@@ -12,5 +12,5 @@ Elist=["Free_=||"
     "X_=|Ext('6new1.txt','y:x','PTYX')|Ext('6dir1.txt','w','W')|"
     "X_data=[Ext('6new1.txt','y:x','PTYX');Ext('6dir1.txt','w','W')]"
 	"LB_=|cons [3 1]|"
-	"LB_data=|zeros(3,1)|"
+	"LB_data=[zeros(3,1)]"
 ```
