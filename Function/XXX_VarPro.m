@@ -85,7 +85,7 @@ end
 A_evl=eval(A_);
 X_hat=eval(Var_{end});
 S_X=sqrt(diag(A_evl*S_LL*A_evl'));
-S_Xr=sqrt(A_evl*S_LL*A_evl');
+S_Xr=sqrt(diag(A_evl*S_LL*A_evl'));
 
 if exist("X_i",'var')
     X_hatr=mod(X_hat,2*pi);
