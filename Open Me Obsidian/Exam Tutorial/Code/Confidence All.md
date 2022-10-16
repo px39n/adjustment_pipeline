@@ -20,7 +20,7 @@ conf=confidence_tool();
 stats=conf.statistic_test_t(u2u("5a"),e1,mean1,s1,f1);
 stats=conf.statistic_test_norm(u2u("5a"),e1,mean1,sig1);
 stats=conf.statistic_test_chi(u2u("5a"),sig1, s1,f1);
-stats=conf.statistic_test_f(u2u("5a"),sig1,sig2,s1,s2,f1,f2);
+stats=conf.statistic_test_f(u2u("5a"),s1,s2,f1,f2);
 ```
 ``````
 
@@ -78,7 +78,7 @@ conf=confidence_tool();
 [mean2,s2,f2]=deal(u2u("3.5mm"),u2u("3.5mm"),9);
 
 [a,b]=conf.get_interval_f(u2u("5a"),s1,s2,f1,f2);
-stats=conf.statistic_test_f(u2u("5a"),sig1,sig2,s1,s2,f1,f2);
+stats=conf.statistic_test_f(u2u("5a"),s1,s2,f1,f2);
 
 ```
 ``````
