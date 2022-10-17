@@ -26,6 +26,28 @@ stats=conf.statistic_test_f(u2u("5a"),s1,s2,f1,f2);
 
 ``````ad-example
 collapse: close
+title: X1-X2(T distribution delta)
+color: 200, 200, 200
+```
+
+addpath Function/
+addpath Semester_2nd_data/
+
+% One-side:  0.95  1-0.05
+% Two-side:  u2u("95s")  u2u("5a")
+conf=confidence_tool();
+[sig1,e1]=deal(1,0);
+[mean1,s1,f1]=deal(8.73,sqrt(0.35),14);
+[mean2,s2,f2]=deal(8.68,sqrt(0.40),16);
+
+[a,b]=conf.get_interval_t_delta(u2u("5a"),mean1,mean2,s1,s2,f1,f2);
+stats=conf.statistic_test_t_delta(u2u("5a"),mean1,mean2,s1,s2,f1,f2);
+```
+``````
+
+
+``````ad-example
+collapse: close
 title: T
 color: 200, 200, 200
 ```

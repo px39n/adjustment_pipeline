@@ -75,11 +75,24 @@ collapse: close
 title: Advantages and Disadvantages of L1‐Estimation from reweighted L2‐ Estimation
 color: 200, 200, 200
 
+L1
 
-|     | adv                                  | dis                                                                                                                                            |
-| --- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| L1  | ![](https://i.imgur.com/NgICp8K.png) | Numerical result can converge to a wrong solution ; it can not be used as the last result because it does not have statistical interpretation. |
-| L2  | ![](https://i.imgur.com/qEtkzPM.png) | Only yields reasonable results if observation errors ~ N().                                                                                    |
+The great advantage of LMS estimation is that it is free from the influences of geometry and so-called leverage observations have no influence on the parameter estimation.
+In (Niemeier 2008, p. 368) it is stated in the context of coordinate transformations that with this method up to $50 \%$ of erroneous data (in control points or observations) can be tolerated.
+Numerical result can converge to a wrong solution ; it can not be used as the last result because it does not have statistical interpretation.
+
+L2
+
+Application of $L_2$-norm-estimation still yields a result that satisfies
+$$
+\boldsymbol{v}^{\mathrm{T}} \mathbf{P} \mathbf{v}=\min
+$$
+But: Statistical interpretation of the results is no longer possible.
+Further: Adjustment yields unrealistic values for the unknowns.
+Consequences: Identification of erroneous observations from investigation of the residuals often impossible.
+$\Rightarrow$ We have to perform a preprocessing.
+
+Only yields reasonable results if observation errors ~ N().   |
 
 
 ```
@@ -93,7 +106,10 @@ title: Compromise between free and fixed control Difference with fixed error and
 color: 200, 200, 200
 Fixed Point will 100%. Free will 0%.
 将unknown引入作为观测值。
-![](https://i.imgur.com/JvyNc3R.png)
+$\rightarrow$ Small value $\sigma_{0 A}^2 \rightarrow$ small variances $\rightarrow$ large weights $\rightarrow$ large impact
+$\rightarrow$ Large value $\sigma_{0 A}^2 \rightarrow$ large variances $\rightarrow$ small weights $\rightarrow$ small impact
+Small / large $\sigma_{0 A}^2$ with respect to the variance factor $\sigma_0^2$ of the observations
+With the choice of $\sigma_{0 A}^2$ we can find a trade-off between the influence of the control points and the inner geometry of a geodetic network.
 ```
 #  Quality
 

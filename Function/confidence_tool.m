@@ -33,7 +33,18 @@ classdef confidence_tool
             disp(sprintf("The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
             Ndeal(['a','b'],Con_AB)
         end      
-        
+         
+        function [a,b] = get_interval_t_delta(obj,prob,  e_mean1, e_mean2, e_sigma1,e_sigma2, dof1,dof2)
+            %METHOD1 Summary of this method goes here
+            %   Detailed explanation goes here
+            sss=sqrt( ((dof1)*e_sigma1^2+(dof2)*e_sigma2^2)  /(dof1+dof2) )*sqrt(1/(dof1+1)+1/(1+dof2));
+            Con_ab=tinv([1-prob,prob],dof1+dof2);
+            Con_AB=  sss*Con_ab;
+            disp(sprintf("The interval boundary is [%.4g,%.4g]",Con_AB(1),Con_AB(2)))
+            disp(sprintf("The confidence Level = %.2f%%, Error probability = %.2f%%",(2*prob-1)*100,(1-prob)*100*2))
+            Ndeal(['a','b'],Con_AB)
+        end      
+               
         function [a,b] = get_interval_chi(obj,prob, e_sigma, dof)
             %METHOD1 Summary of this method goes here
             %   Detailed explanation goes here
@@ -114,7 +125,35 @@ classdef confidence_tool
             end
 
         end      
-        
+           function stats=statistic_test_t_delta(obj,prob, e_mean1, e_mean2, e_sigma1,e_sigma2, dof1,dof2)
+            %METHOD1 Summary of this method goes here
+            %   Detailed explanation goes here
+            %Statistic = sqrt( ((dof1-1)*e_sigma1^2+(dof2-1)*e_sigma2^2)  /(dof1+dof2-2) )*sqrt(1/dof1+1/dof2);
+            Statistic= abs(e_mean1-e_mean2)/(sqrt( ((dof1)*e_sigma1^2+(dof2)*e_sigma2^2)  /(dof1+dof2) )*sqrt(1/(dof1+1)+1/(1+dof2)));
+            Con_ab=tinv([1-prob,prob],dof1+dof2);
+            stats=Statistic; 
+            maxplot=max([Con_ab(1),Con_ab(2),Statistic])+3;
+            minplot=min([Con_ab(1),Con_ab(2),Statistic])-3;
+            x=linspace(minplot,maxplot);
+            
+            obj.plot_dis(x,tpdf(x,dof1+dof2),Statistic,Con_ab, "T")
+            disp(sprintf('Test Statistic: %.2f ,Critical value=[%.2f,%.2f]',Statistic,Con_ab(1),Con_ab(2)))
+            if Statistic<=Con_ab(1)  % x_bar1<=Con_AB
+                disp(sprintf('1.Reject the null hypothesis H0: Same'))
+                disp(sprintf('1.Reject HC: Significant bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2,Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
+            elseif Statistic>=Con_ab(2)
+                disp(sprintf('1,Reject the null hypothesis H0: Same'))
+                disp(sprintf('1,Reject HC: Significant smaller with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HA: Significant Bigger with S=%.2f%%',(prob)*100))
+                disp(sprintf('2.Choose hypothesis HB: Significant difference with S=%.2f%%',(2*prob-1)*100))
+            else
+                disp('Fails to reject the null hypothesis H0') 
+            end
+
+        end      
+             
         function stats=statistic_test_chi(obj,prob, t_sigma, e_sigma, dof)
             %METHOD1 Summary of this method goes here
             %   Detailed explanation goes here
