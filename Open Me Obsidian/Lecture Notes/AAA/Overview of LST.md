@@ -58,7 +58,7 @@
 | Redundancy           | [[r#Any]]                     | [[r#Con]]                                              |
 | While                |                               |                                                        |
 | Observation Equation | [[Observation Eq#GH]]         | [[Observation Eq#GH]]                                  |
-| Object Function      | [[Ω#GH]]                      | [[Ω#GH]]                                               |
+| Object Function      | [[Ω#GH]]                      | [[Ω#GH-Cond]]                                               |
 | Normal Euqation      | [[Normal Eq#GH]]              | [[Normal Eq#GH-Con]]                                   |
 | Update X,L,v         | [[Update#GH]]                 | [[Update#GH]]                                          |
 | Final Check          | [[Final Check#GH]]            | [[Final Check#GH]]                                     |

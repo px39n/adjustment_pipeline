@@ -394,5 +394,38 @@ FB_=[a^2+b^2+c^2];
 cons_info=add_constraint("fullrank",FB_);
 ```
 ``````
+
+``````ad-example
+collapse: close
+title: Two Line cross a point as constraint
+color: 200, 200, 200
+```
+ 
+Elist=["Free_=|x4 y4|"
+    "Free_data=[4;8 ]"
+    "L_=|xa ya xb yb [3 1]|"
+    "L_data=[1 ;2 ;3; 6;9;13; 4;8;9;7;5;2 ]"
+    "X_=|a1 b1 a2 b2|"
+    "X_data=[2;2;3;4]"
+	"LB_=|cons|"
+	"LB_data=[0]"
+    ];
+
+AnalyzeEList(Elist)
+
+VCE_CONFIG=false;
+[Var_ind,Var_name]=findVar()
+S_L=expand_V(ones(size(L_)),Var_ind,u2u("1cm 1cm 1cm 1cm")); 
+
+F_ =[ya-xa*a1-b1;
+	yb-xb*a2-b2]; 
+
+FB_=[y4-x4*a1-b1;
+	y4-x4*a2-b2];
+cons_info=add_constraint("fullrank",FB_);
+```
+``````
+
+
 ## API
 ![[2. Customized LST Pipeline#2 Formula QXX]]

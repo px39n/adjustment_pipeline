@@ -25,7 +25,7 @@ F_ = [Get_Funlist(DIR,{"x","y","w"},"DIR");
 
 ``````ad-example
 collapse: close
-title: Combined with XY as observation
+title: Combined with XY as observation (Keywords: Observed Unknown)
 color: 200, 200, 200
 ```
 Elist=["Free_=|Ext('comb_fix.txt','y:x','PTYX')|"

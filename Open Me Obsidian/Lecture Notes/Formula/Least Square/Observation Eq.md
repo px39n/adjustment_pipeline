@@ -13,3 +13,4 @@ $\left[\begin{array}{l}\mathbf{l}_{N} \\ \mathbf{l}_{A}\end{array}\right]+\left[
 
 ## GH
 $y_i+v_{y_i}-a\left(x_i+v_{x_i}\right)-b=0$
+
