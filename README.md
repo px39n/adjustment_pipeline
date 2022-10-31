@@ -30,5 +30,8 @@ https://px39n.gitbook.io/workspace/
 # A simple example of Linear Regression
 
  ![](https://i.imgur.com/ekiiqdu.png)
+ 
+It will automatically a [adjustment report](https://app.gitbook.com/s/-LaPexbd5yEumpS5UpaG/api/how-the-report-looks-like) for you!
 
-For more complex model, you can choose predefined function, define constraint, input data from file!!
+For more complex model, you can choose predefined function, define constraint, input data from file! Please check in tutorial
+
