@@ -19,37 +19,12 @@ not only (Linear, non-linear, Total LST, constraint, condition, combined, dash,u
 
 # How it work
 
-For any adjustment problem. We always have to following procedure: 
+This code only need necessary data. And information about what kind of problem it is.
 
-1 Input data including(Measurement, Unknown, Error free)                     
-
-2 Form Function Model                              
-
-3 Form Stochastic Model.                            
-
-4 Define Datum and Constraint Model If needed.        
+This automation is mainly realized by [SYMS](https://de.mathworks.com/help/symbolic/syms.html) function in MATLAB.
 
 
-After that, We have many choices to adjust that. Like GM Model(L1, L2, Linear), GH model, VCE etc,.
-
-And you will have to use a bunch of tools to assess the quality.
-
-
-
-
-**But, thanks to this program, you only have to input the data in 1, 3**
-
-** tell it what question it is.**
-
-**there are many predefined API and templates for different function model, adjust method, but you can customize always**
-
-
-and it will automatically complete all other things for you.
-
-This automation is realized by [SYMS](https://de.mathworks.com/help/symbolic/syms.html) function in MATLAB.
-
-
-# Where is the Tutorial?
+# More details please check the Tutorial
 https://px39n.gitbook.io/workspace/
 
 
