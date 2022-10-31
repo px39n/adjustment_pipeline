@@ -27,6 +27,8 @@ This automation is mainly realized by [SYMS](https://de.mathworks.com/help/symbo
 https://px39n.gitbook.io/workspace/
 
 
+# A simple example of Linear Regression
 
+ ![](https://i.imgur.com/ekiiqdu.png)
 
- 
+For more complex model, you can choose predefined function, define constraint, input data from file!!
