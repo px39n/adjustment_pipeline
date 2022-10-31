@@ -1,8 +1,7 @@
  
-# Kindly Notice to friends
+# Notice
 
-This is a public GIthub owned by zhehao Liang(Tom) in TUB, based on lecture taught by [Professor Neitzel](https://www.researchgate.net/profile/Frank-Neitzel)
-
+This is based on lecture taught by [Professor Neitzel](https://www.researchgate.net/profile/Frank-Neitzel)
 
 I work on this only out of my interest and further scientific use. 
 
