@@ -31,7 +31,7 @@ https://px39n.gitbook.io/workspace/
 
  ![](https://i.imgur.com/ekiiqdu.png)
  
-It will automatically generate an [adjustment report](https://app.gitbook.com/s/-LaPexbd5yEumpS5UpaG/api/how-the-report-looks-like) for you!
+It will automatically generate an [adjustment report](https://px39n.gitbook.io/workspace/api/how-the-report-looks-like) for you!
 
 For more complex model, you can choose predefined function, define constraint, input data from file! Please check in tutorial
 
