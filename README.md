@@ -1,15 +1,13 @@
  
 # Kindly Notice to friends
 
-This is a private GIthub owned by zhehao Liang(Tom). 
+This is a public GIthub owned by zhehao Liang(Tom) in TUB, based on lecture taught by [Professor Neitzel](https://www.researchgate.net/profile/Frank-Neitzel)
+
 
 I work on this only out of my interest and further scientific use. 
 
-It will take rise for taking exams by using it. I am not reponsible for that.
+It is not allowed to take exams yet.
 
-So it is not allowed to share without permission unless its in trust list  ( I may share after it becomes perfect)
-
-Current Trust List: (Sama, YASSINE, Jawher, 柏林四人帮, Taruna)
 
 
 # What these code can do?
@@ -21,7 +19,9 @@ not only (Linear, non-linear, Total LST, constraint, condition, combined, dash,u
 
 # How it work
 
-So, for any adjustment problem. We always have to following procedure:
+This code make use of [SYMS](https://de.mathworks.com/help/symbolic/syms.html) function in MATLAB to realize automatically calculation.
+
+For any adjustment problem. We always have to following procedure: 
 
 1 Input data including 
 
@@ -44,8 +44,6 @@ But, thanks to this program, you only have to translate your handwriting procedu
 and even you dont have to construct function model for networks, there are many predefined API and templates for that!
 
 and it will automatically complete all other things for you.
-
-
 
 
 # Where is the Tutorial?
