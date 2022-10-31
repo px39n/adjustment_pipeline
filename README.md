@@ -23,7 +23,7 @@ This code only need necessary data. And information about what kind of problem i
 This automation is mainly realized by [SYMS](https://de.mathworks.com/help/symbolic/syms.html) function in MATLAB.
 
 
-# More details please check the Tutorial
+# Tutorial
 https://px39n.gitbook.io/workspace/
 
 
