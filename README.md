@@ -5,7 +5,9 @@ This is based on lecture taught by [Professor Neitzel](https://www.researchgate.
 
 I work on this only out of my interest and further scientific use. 
 
-It is not allowed to take exams yet.
+It is allowed to take exams yet. But i am not responsible for any failure of Exam :D
+
+If you want to use variance propagation code, pls check legacy --> pipline_varpro_work.mlx and move it outside of fold. 
 
 
 
